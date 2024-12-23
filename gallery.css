@@ -1,0 +1,85 @@
+body {
+    background-color:  rgb(176, 218, 134);
+    display: flex;
+    flex-direction: column;
+     /* Center align items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header {
+    margin-top: 10px;
+    background-color: rgb(107, 156, 92);
+    height: 50px;     
+    display: flex;
+}
+
+.btn {
+    background-color:  rgb(107, 156, 92);
+    padding: 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    margin-left: 100px;
+    color: cornsilk;
+}
+
+.btn:hover {
+    background-color: rgb(176, 218, 134);
+    color: black;
+}
+
+
+@media (min-width: 101px) and (max-width: 900px) {
+    
+
+    .header {
+        margin-top: 10px;
+        background-color: rgb(107, 156, 92);;
+        height: 50px;     
+        display: flex;
+    }
+    
+    .btn {
+        background-color:rgb(176, 218, 134);;
+        padding: 16px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        color: cornsilk;
+        margin-left: 20px;
+        margin-top: -5px;
+    }
+    
+    .btn:hover {
+        background-color: rgb(107, 156, 92);
+        color: black;
+    }
+
+    .galleryimage {
+        margin-left: -30px;
+        width: 100%;
+    }
+}
+
+/* Styles for screens larger than 900px */
+@media (min-width: 901px) {
+    .two, .one {
+        width: 40%;
+    }
+
+    .front {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .text {
+        font-size: 30px;
+        text-align: left;
+        margin-right: 20px; /* Default margin for larger screens */
+    }
+}    
+

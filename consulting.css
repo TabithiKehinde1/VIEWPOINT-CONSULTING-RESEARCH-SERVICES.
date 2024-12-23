@@ -1,0 +1,159 @@
+body{
+    background-color:  rgb(176, 218, 134);
+}
+
+.header {
+    margin-top: 10px;
+    background-color: rgb(107, 156, 92);
+    height: 50px;     
+    display: flex;
+}
+
+.btn {
+    background-color:  rgb(107, 156, 92);
+    padding: 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    margin-left: 100px;
+    color: cornsilk;
+}
+
+.btn:hover {
+    background-color: rgb(176, 218, 134);
+    color: black;
+}
+
+.research {
+    background-color:rgb(107, 156, 92);
+    height: 200px;
+    width: 510px;
+    font-size: 20px;
+    margin-top: 10px;  
+    margin-left: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.breaker {
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.body3 {
+    height: 320px;
+    margin-top: 20px;
+    background-color: rgb(107, 156, 92);
+    text-align: center;
+}
+
+.acct {
+    padding-top: 50px;
+    font-size: 30px;
+    color: cornsilk;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (min-width: 101px) and (max-width: 900px) {
+    .two, .one {
+        width: 70%; /* Adjusted to ensure it fits within the screen */
+        margin-top: 10px;
+        border-radius: 20px;
+        font-size: 18px; /* Slightly smaller font size for smaller screens */
+    }
+
+    .body3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .front {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .text {
+        font-size: 20px;
+        text-align: center;
+        margin-right: 0; /* Center align text */
+    }
+
+    .acct {
+        padding-top: 50px;
+        font-size: 20px;
+    }
+
+    .images {
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        margin-left: 200px; /* Adjusted for smaller screens */
+    }
+
+    .header {
+        margin-top: 10px;
+        background-color: rgb(107, 156, 92);;
+        height: 50px;     
+        display: flex;
+    }
+    
+    .btn {
+        background-color:rgb(176, 218, 134);;
+        padding: 16px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        color: cornsilk;
+        margin-left: 20px;
+        margin-top: -5px;
+    }
+    
+    .btn:hover {
+        background-color: rgb(107, 156, 92);
+        color: black;
+    }
+
+    .research {
+        background-color:rgb(107, 156, 92);
+        height: 250px;
+        width: 450px;
+        font-size: 20px;
+        margin-top: 10px;  
+        margin-left: 5px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .breaker {
+        display: grid;    
+        grid-template-columns: 1fr; 
+    }
+    
+}
+
+/* Styles for screens larger than 900px */
+@media (min-width: 901px) {
+    .two, .one {
+        width: 40%;
+    }
+
+    .front {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .text {
+        font-size: 30px;
+        text-align: left;
+        margin-right: 20px; /* Default margin for larger screens */
+    }
+}    
+

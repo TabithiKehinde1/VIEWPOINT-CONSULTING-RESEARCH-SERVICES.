@@ -1,0 +1,185 @@
+body {
+    margin: 0px 0px 0px;
+}
+
+.header {
+    margin-top: 10px;
+    background-color: rgb(107, 156, 92);
+    height: 50px;     
+    display: flex;
+}
+
+.btn {
+    background-color:rgb(107, 156, 92);
+    padding: 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: cornsilk;
+    margin-left: 100px;
+}
+
+.btn:hover {
+    background-color: rgb(176, 218, 134);
+    color: black;
+}
+
+.body2 {
+    text-align: center;
+    display: block;
+}
+
+.icon {
+    display: flex; 
+    width: 50px;
+    align-items: center;
+}
+
+.two, .one {
+    height: 40px;
+    width: 30%;
+    border-radius: 30px;
+    margin-top: 7px;
+    text-align: center;
+    font-size: 20px;
+    color: cornsilk;
+    background-color: rgb(107, 156, 92);
+    cursor: pointer;
+    border: 3px solid cornsilk;
+}
+
+.two:hover, .one:hover {
+    background-color: rgb(176, 218, 134);
+    color: black;
+}
+
+.images {
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 740px;
+}
+
+.image {
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.body3 {
+    height: 150px;
+    margin-top: 20px;
+    background-color: rgb(107, 156, 92);
+    text-align: center;
+}
+
+.acct {
+    padding-top: 50px;
+    font-size: 30px;
+    color: cornsilk;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.front {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0px 0px;
+}
+
+.front img {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.text {
+    font-size: 30px;
+}
+
+/* Styles for screens between 101px and 900px */
+@media (min-width: 101px) and (max-width: 900px) {
+    .two, .one {
+        width: 70%; /* Adjusted to ensure it fits within the screen */
+        margin-top: 10px;
+        border-radius: 20px;
+        font-size: 18px; /* Slightly smaller font size for smaller screens */
+    }
+
+    .body3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .front {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .text {
+        font-size: 20px;
+        text-align: center;
+        margin-right: 0; /* Center align text */
+    }
+
+    .acct {
+        padding-top: 50px;
+        font-size: 20px;
+    }
+
+    .images {
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        margin-left: 200px; /* Adjusted for smaller screens */
+    }
+
+    .header {
+        margin-top: 10px;
+        background-color: rgb(107, 156, 92);;
+        height: 50px;     
+        display: flex;
+    }
+    
+    .btn {
+        background-color:rgb(176, 218, 134);;
+        padding: 16px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        color: cornsilk;
+        margin-left: 20px;
+        margin-top: -5px;
+    }
+    
+    .btn:hover {
+        background-color: rgb(107, 156, 92);
+        color: black;
+    }
+}
+
+/* Styles for screens larger than 900px */
+@media (min-width: 901px) {
+    .two, .one {
+        width: 40%;
+    }
+
+    .front {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .text {
+        font-size: 30px;
+        text-align: left;
+        margin-right: 20px; /* Default margin for larger screens */
+    }
+}    
+

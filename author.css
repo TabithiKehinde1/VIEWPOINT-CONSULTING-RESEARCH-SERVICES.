@@ -1,0 +1,114 @@
+body {
+    background-color:  rgb(176, 218, 134);
+    display: flex;
+    flex-direction: column;
+     /* Center align items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header {
+    margin-top: 10px;
+    background-color: rgb(107, 156, 92);
+    height: 50px;     
+    display: flex;
+}
+
+.btn {
+    background-color:  rgb(107, 156, 92);
+    padding: 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    margin-left: 100px;
+    color: cornsilk;
+}
+
+.btn:hover {
+    background-color: rgb(176, 218, 134);
+    color: black;
+}
+
+.pic {
+    margin: 10px;
+    margin-top: 40px;
+    height: 400px;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35), 0 11px 8px rgba(0, 0, 0, 0.22);
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.writeup {
+    margin: 40px 10px 0 20px; /* Combined margin properties */
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles for screens between 101px and 900px */
+@media (min-width: 101px) and (max-width: 900px) {
+    .writeup {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+    .pic {
+        width: 80%; /* Adjust width for responsiveness */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .header {
+        margin-top: 10px;
+        background-color: rgb(107, 156, 92);
+        height: 40px;     
+        display: flex;
+    }
+    
+    .btn {
+        background-color: rgb(176, 218, 134);
+        padding: 16px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+    
+    .btn:hover {
+        background-color: rgb(107, 156, 92);
+        color: black;
+    }
+}
+
+/* Responsive styles for screens smaller than 100px */
+@media (max-width: 100px) {
+    .writeup {
+        font-size: 15px; /* Further reduce font size */
+    }
+    .pic {
+        width: 100%; /* Full width for very small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .header {
+        margin-top: 10px;
+        background-color: rgb(107, 156, 92);
+        height: 40px;     
+        display: flex;
+    }
+    
+    .btn {
+        background-color: cornsilk;
+        padding: 16px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+    
+    .btn:hover {
+        background-color: rgb(107, 156, 92);
+        color: white;
+    }
+}
